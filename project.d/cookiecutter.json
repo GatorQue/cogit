@@ -1,0 +1,17 @@
+{
+    "email": "ryanlindeman+cogit@gmail.com",
+    "features": "travis flake8 cli",
+    "full_name": "Ryan Lindeman",
+    "github_url": "https://github.com/GatorQue/cogit",
+    "github_username": "GatorQue",
+    "keywords": "application git",
+    "license": "MIT",
+    "pkg_name": "cogit",
+    "project_name": "CoGit",
+    "repo_name": "cogit",
+    "short_description": "Multi-Git repository and project management system",
+    "url": "https://github.com/GatorQue/cogit",
+    "use_py3": "true",
+    "version": "0.0.1",
+    "year": "2017"
+}
