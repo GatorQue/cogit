@@ -24,7 +24,7 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 """
-from __future__ import absolute_import, unicode_literals, print_function
+from __future__ import absolute_import, print_function
 
 __url__             = "https://github.com/GatorQue/cogit"
 __version__         = "0.0.1"

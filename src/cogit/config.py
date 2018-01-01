@@ -21,13 +21,11 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
-from __future__ import absolute_import, unicode_literals, print_function
+from __future__ import absolute_import, print_function
 
 import os
 import re
 import sys
-
-from rudiments.reamed.click import Configuration  # noqa pylint: disable=unused-import
 
 from ._compat import iteritems
 

@@ -21,7 +21,7 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
-from __future__ import absolute_import, unicode_literals, print_function
+from __future__ import absolute_import, print_function
 
 import re
 
@@ -74,12 +74,12 @@ def license_option(*param_decls, **attrs):
 @license_option()
 @click.option('-q', '--quiet', is_flag=True, default=False, help='Be quiet (show only errors).')
 @click.option('-v', '--verbose', is_flag=True, default=False, help='Create extra verbose output.')
-@click.option('-c', '--config', "config_paths", metavar='FILE',
-              multiple=True, type=click.Path(), help='Load given configuration file(s).')
+#@click.option('-c', '--config', "config_paths", metavar='FILE',
+#              multiple=True, type=click.Path(), help='Load given configuration file(s).')
 @click.pass_context
-def cli(ctx, quiet=False, verbose=False, config_paths=None):  # pylint: disable=unused-argument
+def cli(ctx, quiet=False, verbose=False):  # pylint: disable=unused-argument
     """'cogit' command line tool."""
-    config.Configuration.from_context(ctx, config_paths)
+    #config.Configuration.from_context(ctx, config_paths)
     ctx.obj.quiet = quiet
     ctx.obj.verbose = verbose
 
