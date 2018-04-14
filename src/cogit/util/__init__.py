@@ -25,3 +25,4 @@ from __future__ import absolute_import, print_function
 
 from . import env
 from . import ext
+from . import git

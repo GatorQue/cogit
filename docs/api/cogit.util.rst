@@ -25,3 +25,12 @@ cogit.util.ext module
     :undoc-members:
     :show-inheritance:
 
+cogit.util.git module
+---------------------
+
+.. automodule:: cogit.util.git
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
