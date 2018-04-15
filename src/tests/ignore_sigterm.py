@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # pylint: disable=bad-continuation
-""" Helpers.
+""" Catches and ignores SIGTERM signals for testing util.ext.execute_iter
 """
 # Copyright ©  2017 Ryan Lindeman <ryanlindeman+cogit@gmail.com>
 #
@@ -23,5 +23,33 @@
 # SOFTWARE.
 from __future__ import absolute_import, print_function
 
-from . import env
-from . import ext
+import signal
+import time
+
+
+def ignore_sigterm_handler(signum, frame):
+    # pylint: disable=unused-argument
+    """Ignores all incoming signals.
+    :param signum: The signal number caught.
+    :type signum: int
+
+    :param frame: The current stack frame when the signal occurred.
+    :type frame: None or frame object
+    """
+
+    print("Signal {} ignored".format(signum))
+
+
+signal.signal(signal.SIGTERM, ignore_sigterm_handler)
+
+
+def main():
+    """Infinite loop for using in Popen execute_iter tests.
+    """
+    print("Waiting indefinitely")
+    while True:
+        time.sleep(1)
+
+
+if __name__ == "__main__":
+    main()

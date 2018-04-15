@@ -17,3 +17,11 @@ cogit.util.env module
     :undoc-members:
     :show-inheritance:
 
+cogit.util.ext module
+---------------------
+
+.. automodule:: cogit.util.ext
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
