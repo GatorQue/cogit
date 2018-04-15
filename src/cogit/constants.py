@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # pylint: disable=bad-continuation
-""" Helpers.
+""" CoGit constants
 """
 # Copyright ©  2017 Ryan Lindeman <ryanlindeman+cogit@gmail.com>
 #
@@ -23,4 +23,9 @@
 # SOFTWARE.
 from __future__ import absolute_import, print_function
 
-from . import env
+import os
+
+COGIT_CONFIG_NAME = "cogit.cfg"
+COGIT_DIR_NAME = ".cogit"
+COGIT_USER_DIR = os.path.join(os.path.expanduser('~'), COGIT_DIR_NAME)
+COGIT_GLOBAL_CONFIG = os.path.join(COGIT_USER_DIR, COGIT_CONFIG_NAME)

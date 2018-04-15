@@ -25,4 +25,12 @@ cogit.config module
     :undoc-members:
     :show-inheritance:
 
+cogit.constants module
+----------------------
+
+.. automodule:: cogit.constants
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 
